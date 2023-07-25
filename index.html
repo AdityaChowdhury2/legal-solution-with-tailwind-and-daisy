@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/images/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <!-- DaisyUI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
@@ -33,6 +33,16 @@
         .font-eb-garamond {
             font-family: 'EB Garamond', serif;
         }
+
+        /* .overlay-1 {
+            content: '';
+            top: 0;
+            right: 0;
+             background-color: rgb(0, 255, 200); 
+            position: absolute;
+            background-color: aqua;
+            opacity: 0.8;
+        } */
     </style>
     <script>
         tailwind.config = {
@@ -250,21 +260,24 @@
                 <p class="text-gray-400 mb-16 mt-6">There are many variations of passages of Lorem Ipsum available, but
                     the majority have suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="carousel ">
+            <div class="carousel">
                 <!-- Slider 1 -->
                 <div id="slide1"
-                    class="carousel-item h-[700px] relative w-full justify-center items-center bg-slider-1 py-24">
+                    class="h-[500px] md:h-auto relative carousel-item bg-cover w-full justify-center items-center py-24 bg-slider-1 bg-gray-900 bg-blend-overlay bg-opacity-75 ">
+
                     <div class="text-white text-center max-w-4xl">
                         <img alt="testimonial"
-                            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                            class="w-20 h-20  mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                             src="./images/client.png">
                         <h2 class=" font-medium font-eb-garamond text-2xl tracking-wider ">Awlad Hossain
                         </h2>
                         <p class="">UIX Designer</p>
                         <span class="inline-block h-1 w-16 rounded bg-primary-color mt-6 mb-4"></span>
-                        <p class="leading-relaxed">Contrary to popular belief, Lorem Ipsum is not simply random text. It
+                        <p class="leading-relaxed">Contrary to popular belief, Lorem Ipsum is not simply random
+                            text. It
                             has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
-                            old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up
+                            old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked
+                            up
                             one of the more obscure Latin words, consectetur.</p>
 
                     </div>
@@ -275,10 +288,10 @@
                 </div>
                 <!-- Slider 2 -->
                 <div id="slide2"
-                    class="carousel-item h-[700px] relative w-full justify-center items-center bg-slider-2 py-24">
+                    class="h-[500px] md:h-auto carousel-item relative bg-cover w-full justify-center items-center bg-slider-2 py-24 bg-orange-900 bg-blend-overlay bg-opacity-75">
                     <div class="text-white text-center max-w-4xl">
                         <img alt="testimonial"
-                            class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
+                            class="w-20 h-20  mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
                             src="./images/client.png">
                         <h2 class=" font-medium font-eb-garamond text-2xl tracking-wider ">Awlad Hossain
                         </h2>
@@ -299,7 +312,7 @@
                 </div>
                 <!-- Slider 3 -->
                 <div id="slide3"
-                    class="carousel-item h-[700px] relative w-full justify-center items-center bg-slider-3 py-24">
+                    class="h-[500px] md:h-auto carousel-item bg-cover relative w-full justify-center items-center bg-slider-3 py-24 bg-sky-700 bg-blend-overlay bg-opacity-75">
                     <div class="text-white text-center max-w-4xl">
                         <img alt="testimonial"
                             class="w-20 h-20 mb-8 object-cover object-center rounded-full inline-block border-2 border-gray-200 bg-gray-100"
@@ -328,9 +341,57 @@
         <!-- Frequently Asked Question -->
         <section class="container mt-12 mb-40 px-2">
             <div class="text-center max-w-3xl mx-auto">
-                <h2 class="font-extrabold text-5xl font-eb-garamond">The Legal Practice Area</h2>
+                <h2 class="font-extrabold text-5xl font-eb-garamond">Frequently Asked Any Questions</h2>
                 <p class="text-gray-400 mb-16 mt-6">There are many variations of passages of Lorem Ipsum available, but
                     the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="flex flex-col-reverse lg:flex-row gap-3">
+                <div class="flex-1 space-y-8">
+                    <div class="collapse collapse-plus bg-base-200 rounded-xl p-5">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            1. Are application fee waivers available?
+                        </div>
+                        <div class="collapse-content ">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200 rounded-xl p-5">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            2. Are application fee waivers available?
+                        </div>
+                        <div class="collapse-content ">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200 rounded-xl p-5">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            3. Are application fee waivers available?
+                        </div>
+                        <div class="collapse-content ">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour. </p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-plus bg-base-200 rounded-xl p-5">
+                        <input type="radio" name="my-accordion-3" checked="checked" />
+                        <div class="collapse-title text-xl font-medium">
+                            4. Are application fee waivers available?
+                        </div>
+                        <div class="collapse-content ">
+                            <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                                suffered alteration in some form, by injected humour. </p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex-1 flex justify-center">
+                    <img src="./images/faq.png" alt="faq">
+                </div>
             </div>
         </section>
 
